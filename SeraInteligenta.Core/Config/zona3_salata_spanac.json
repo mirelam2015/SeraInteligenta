@@ -1,0 +1,11 @@
+{
+  "Id": 3,
+  "NumeZona": "Zona 3 - Parcela Sud",
+  "Lungime": 10.0,
+  "Latime": 5.0,
+  "SuprafataMp": 50.0,
+  "PlantaSelectataId": "salata",
+  "UmiditateTinta": 55.0,
+  "LuminaTinta": 350.0,
+  "PlanteCompatibile": ["Salată", "Spanac"]
+}

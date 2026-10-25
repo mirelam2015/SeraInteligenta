@@ -1,0 +1,11 @@
+{
+  "Id": 4,
+  "NumeZona": "Zona 4 - Parcela Vest",
+  "Lungime": 10.0,
+  "Latime": 5.0,
+  "SuprafataMp": 50.0,
+  "PlantaSelectataId": "ierburi",
+  "UmiditateTinta": 60.0,
+  "LuminaTinta": 650.0,
+  "PlanteCompatibile": ["Ierburi Aromatice"]
+}

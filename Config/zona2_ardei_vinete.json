@@ -1,0 +1,11 @@
+{
+  "Id": 2,
+  "NumeZona": "Zona 2 - Parcela Est",
+  "Lungime": 10.0,
+  "Latime": 5.0,
+  "SuprafataMp": 50.0,
+  "PlantaSelectataId": "castraveti",
+  "UmiditateTinta": 80.0,
+  "LuminaTinta": 750.0,
+  "PlanteCompatibile": ["Castraveți", "Ardei"]
+}

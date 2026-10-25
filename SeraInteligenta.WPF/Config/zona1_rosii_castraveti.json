@@ -1,0 +1,11 @@
+{
+  "Id": 1,
+  "NumeZona": "Zona 1 - Parcela Nord",
+  "Lungime": 10.0,
+  "Latime": 5.0,
+  "SuprafataMp": 50.0,
+  "PlantaSelectataId": "rosii",
+  "UmiditateTinta": 65.0,
+  "LuminaTinta": 600.0,
+  "PlanteCompatibile": ["Roșii", "Castraveți"]
+}

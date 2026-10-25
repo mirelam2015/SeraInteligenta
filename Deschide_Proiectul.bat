@@ -1,0 +1,3 @@
+@echo off
+echo Se deschide proiectul Sera Inteligenta in Visual Studio...
+start "" "SeraInteligenta.sln"

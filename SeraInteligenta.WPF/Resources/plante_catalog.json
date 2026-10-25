@@ -1,0 +1,92 @@
+[
+  {
+    "IdPlanta": "rosii",
+    "Nume": "Roșii (Tomate)",
+    "Categorie": "Solanacee",
+    "UmiditateOptima": 65,
+    "LuminaOptima": 600,
+    "TemperaturaOptima": 23,
+    "Descriere": "Cultură hidroponică sau sol, necesită lumină intensă și umiditate medie moderată."
+  },
+  {
+    "IdPlanta": "castraveti",
+    "Nume": "Castraveți",
+    "Categorie": "Cucurbitacee",
+    "UmiditateOptima": 80,
+    "LuminaOptima": 750,
+    "TemperaturaOptima": 25,
+    "Descriere": "Sensibili la secetă, cer umiditate ridicată a aerului și iluminare puternică."
+  },
+  {
+    "IdPlanta": "ardei",
+    "Nume": "Ardei Gras",
+    "Categorie": "Solanacee",
+    "UmiditateOptima": 68,
+    "LuminaOptima": 700,
+    "TemperaturaOptima": 24,
+    "Descriere": "Plantă termofilă, necesită stabilitate a umidității fără excese la rădăcină."
+  },
+  {
+    "IdPlanta": "vinete",
+    "Nume": "Vinete",
+    "Categorie": "Solanacee",
+    "UmiditateOptima": 72,
+    "LuminaOptima": 800,
+    "TemperaturaOptima": 26,
+    "Descriere": "Iubitoare de căldură și soare direct, sensibile la scăderi bruște de lumină."
+  },
+  {
+    "IdPlanta": "salata",
+    "Nume": "Salată Verde",
+    "Categorie": "Legume Frunzoase",
+    "UmiditateOptima": 55,
+    "LuminaOptima": 350,
+    "TemperaturaOptima": 18,
+    "Descriere": "Creștere rapidă, nu tolerează căldura excesivă sau iluminarea arzătoare."
+  },
+  {
+    "IdPlanta": "spanac",
+    "Nume": "Spanac",
+    "Categorie": "Legume Frunzoase",
+    "UmiditateOptima": 58,
+    "LuminaOptima": 400,
+    "TemperaturaOptima": 17,
+    "Descriere": "Tolerează temperaturi mai scăzute și lumină moderată, ideal pentru culturi timpurii."
+  },
+  {
+    "IdPlanta": "capsuni",
+    "Nume": "Căpșuni",
+    "Categorie": "Fructe de Pădure",
+    "UmiditateOptima": 62,
+    "LuminaOptima": 550,
+    "TemperaturaOptima": 20,
+    "Descriere": "Polenizare dependentă de fluxul de aer și iluminare adecvată a florilor."
+  },
+  {
+    "IdPlanta": "ierburi",
+    "Nume": "Ierburi Aromatice (Busuioc)",
+    "Categorie": "Plante Aromatice",
+    "UmiditateOptima": 60,
+    "LuminaOptima": 650,
+    "TemperaturaOptima": 22,
+    "Descriere": "Necesită lumină generoasă pentru acumularea uleiurilor eterice aromatice."
+  },
+  {
+    "IdPlanta": "varza",
+    "Nume": "Varză Timpurie",
+    "Categorie": "Brasicacee",
+    "UmiditateOptima": 70,
+    "LuminaOptima": 500,
+    "TemperaturaOptima": 16,
+    "Descriere": "Tolerează temperaturi mai scăzute, cerințe constante de umiditate a solului."
+  },
+  {
+    "IdPlanta": "dovlecei",
+    "Nume": "Dovlecei (Zucchini)",
+    "Categorie": "Cucurbitacee",
+    "UmiditateOptima": 75,
+    "LuminaOptima": 700,
+    "TemperaturaOptima": 22,
+    "Descriere": "Creștere vegetativă viguroasă, necesită lumină abundentă și aport hidric regulat."
+  }
+]
