@@ -1,7 +1,10 @@
-# Sera Inteligentă – Milestone 1 (Arhiva1)
+# Sera Inteligentă – Milestone 1
+
+**Capilna Mirela**, grupa 10LD541 · Proiect comun IoT și IoC
 
 Aplicație WPF (.NET 8) pentru configurarea unei sere pe zone, validarea parcelelor și monitorizarea senzorilor simulați.
-Proiect comun pentru IoT și IoC.
+
+Documentația este în folderul `Documentatie`: planul proiectului pe 5 etape și documentația acestei etape (Word și PDF).
 
 ## Cum rulezi
 
@@ -51,3 +54,8 @@ Testele: meniul **Test → Run All Tests** (sau `dotnet test` în folderul solu�
 ## Notă
 
 Datele agronomice din catalog (intervale, incompatibilități, asocieri) sunt simplificate, cu scop demonstrativ.
+
+## Instrumente folosite
+
+La proiectarea arhitecturii, scrierea codului, a testelor și a documentației am folosit asistentul AI Claude (Anthropic).
+Codul este compilat, rulat și testat în Visual Studio.
