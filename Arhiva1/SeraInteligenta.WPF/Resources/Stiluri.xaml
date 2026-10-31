@@ -1,0 +1,117 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:conv="clr-namespace:SeraInteligenta.WPF.Converters">
+
+    <!-- ===== Culori ===== -->
+    <SolidColorBrush x:Key="Brush.Fundal" Color="#F3F5F1"/>
+    <SolidColorBrush x:Key="Brush.Card" Color="#FFFFFF"/>
+    <SolidColorBrush x:Key="Brush.Chenar" Color="#DCE2D8"/>
+    <SolidColorBrush x:Key="Brush.Text" Color="#1E2A1E"/>
+    <SolidColorBrush x:Key="Brush.TextSecundar" Color="#5F6B5F"/>
+    <SolidColorBrush x:Key="Brush.Accent" Color="#2E7D32"/>
+    <SolidColorBrush x:Key="Brush.Accent.Fundal" Color="#E3F1E4"/>
+
+    <!-- Severități: culoare puternică pentru text/chenar, variantă deschisă pentru fundal -->
+    <SolidColorBrush x:Key="Brush.Eroare" Color="#C62828"/>
+    <SolidColorBrush x:Key="Brush.Eroare.Fundal" Color="#FDECEC"/>
+    <SolidColorBrush x:Key="Brush.Avertisment" Color="#B26A00"/>
+    <SolidColorBrush x:Key="Brush.Avertisment.Fundal" Color="#FFF4E0"/>
+    <SolidColorBrush x:Key="Brush.Info" Color="#1565C0"/>
+    <SolidColorBrush x:Key="Brush.Info.Fundal" Color="#E8F1FC"/>
+    <SolidColorBrush x:Key="Brush.Ok" Color="#2E7D32"/>
+    <SolidColorBrush x:Key="Brush.Ok.Fundal" Color="#E3F1E4"/>
+
+    <!-- Harta -->
+    <SolidColorBrush x:Key="Brush.Alee" Color="#E8E1D3"/>
+    <SolidColorBrush x:Key="Brush.Sol" Color="#8D6E52"/>
+    <SolidColorBrush x:Key="Brush.Perete" Color="#7A8A7A"/>
+    <SolidColorBrush x:Key="Brush.SenzorClimat" Color="#1565C0"/>
+    <SolidColorBrush x:Key="Brush.SenzorSol" Color="#4E342E"/>
+    <SolidColorBrush x:Key="Brush.SenzorLumina" Color="#FBC02D"/>
+
+    <FontFamily x:Key="Font.Iconite">Segoe Fluent Icons, Segoe MDL2 Assets</FontFamily>
+
+    <!-- ===== Convertoare ===== -->
+    <conv:PlantaIconConverter x:Key="PlantaIcon"/>
+    <conv:PlantaModelConverter x:Key="PlantaModel"/>
+    <conv:SeveritateBrushConverter x:Key="SeveritateBrush"/>
+    <conv:SeveritateSimbolConverter x:Key="SeveritateSimbol"/>
+    <conv:StareValoareBrushConverter x:Key="StareValoareBrush"/>
+    <conv:SelectieGrosimeConverter x:Key="SelectieGrosime"/>
+    <BooleanToVisibilityConverter x:Key="BoolVizibil"/>
+
+    <!-- ===== Stiluri ===== -->
+    <Style x:Key="Card" TargetType="Border">
+        <Setter Property="Background" Value="{StaticResource Brush.Card}"/>
+        <Setter Property="BorderBrush" Value="{StaticResource Brush.Chenar}"/>
+        <Setter Property="BorderThickness" Value="1"/>
+        <Setter Property="CornerRadius" Value="10"/>
+        <Setter Property="Padding" Value="14"/>
+    </Style>
+
+    <Style x:Key="TitluSectiune" TargetType="TextBlock">
+        <Setter Property="FontSize" Value="15"/>
+        <Setter Property="FontWeight" Value="SemiBold"/>
+        <Setter Property="Foreground" Value="{StaticResource Brush.Text}"/>
+        <Setter Property="Margin" Value="0,0,0,10"/>
+    </Style>
+
+    <Style x:Key="Eticheta" TargetType="TextBlock">
+        <Setter Property="FontSize" Value="12"/>
+        <Setter Property="Foreground" Value="{StaticResource Brush.TextSecundar}"/>
+        <Setter Property="Margin" Value="0,0,0,3"/>
+    </Style>
+
+    <Style x:Key="Simbol" TargetType="TextBlock">
+        <Setter Property="FontFamily" Value="{StaticResource Font.Iconite}"/>
+        <Setter Property="FontSize" Value="14"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+    </Style>
+
+    <!-- Câmpurile numerice: la valoare greșită, chenar roșu + mesajul în tooltip -->
+    <Style TargetType="TextBox">
+        <Setter Property="Padding" Value="6,4"/>
+        <Setter Property="FontSize" Value="13"/>
+        <Setter Property="BorderBrush" Value="{StaticResource Brush.Chenar}"/>
+        <Setter Property="VerticalContentAlignment" Value="Center"/>
+        <Style.Triggers>
+            <Trigger Property="Validation.HasError" Value="True">
+                <Setter Property="ToolTip" Value="{Binding RelativeSource={RelativeSource Self}, Path=(Validation.Errors)/ErrorContent}"/>
+                <Setter Property="Background" Value="{StaticResource Brush.Eroare.Fundal}"/>
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style TargetType="ComboBox">
+        <Setter Property="FontSize" Value="13"/>
+        <Setter Property="Padding" Value="6,4"/>
+    </Style>
+
+    <Style TargetType="Button">
+        <Setter Property="Padding" Value="12,6"/>
+        <Setter Property="FontSize" Value="13"/>
+        <Setter Property="Margin" Value="6,0,0,0"/>
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="ToolTipService.ShowOnDisabled" Value="True"/>
+    </Style>
+
+    <!-- Butonul transparent folosit pentru parcelele de pe hartă: tot conținutul e clicabil și accesibil din tastatură -->
+    <Style x:Key="ButonParcela" TargetType="Button">
+        <Setter Property="Cursor" Value="Hand"/>
+        <Setter Property="Focusable" Value="True"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <ContentPresenter/>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style x:Key="Insigna" TargetType="Border">
+        <Setter Property="CornerRadius" Value="10"/>
+        <Setter Property="Padding" Value="8,2"/>
+        <Setter Property="VerticalAlignment" Value="Center"/>
+    </Style>
+
+</ResourceDictionary>

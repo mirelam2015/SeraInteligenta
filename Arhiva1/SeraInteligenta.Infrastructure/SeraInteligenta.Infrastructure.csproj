@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Implementările concrete ale interfețelor din Core: fișiere JSON, senzori simulați, monitorizare.
+       În M3 aici se adaugă MQTT, în M4 SQLite. -->
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>SeraInteligenta.Infrastructure</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SeraInteligenta.Core\SeraInteligenta.Core.csproj" />
+  </ItemGroup>
+
+</Project>

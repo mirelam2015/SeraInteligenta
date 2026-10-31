@@ -1,0 +1,3 @@
+@echo off
+echo Se deschide proiectul Sera Inteligenta (Milestone 1) in Visual Studio...
+start "" "%~dp0SeraInteligenta.sln"

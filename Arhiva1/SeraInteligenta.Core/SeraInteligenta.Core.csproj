@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- Nucleul aplicației: modele, interfețe, reguli de validare.
+       Intenționat FĂRĂ pachete NuGet și fără referințe la alte proiecte. -->
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>SeraInteligenta.Core</RootNamespace>
+  </PropertyGroup>
+
+</Project>

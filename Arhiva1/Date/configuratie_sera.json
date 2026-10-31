@@ -1,0 +1,43 @@
+{
+  "Sera": {
+    "Lungime": 24.0,
+    "Latime": 12.0,
+    "Inaltime": 3.8,
+    "LatimeAlee": 1.0,
+    "ProcentMinimCuloare": 15.0
+  },
+  "Zone": [
+    {
+      "Id": 1,
+      "Nume": "Zona 1 – Nord-Vest",
+      "Lungime": 10.0,
+      "Latime": 4.0,
+      "PlantaPrincipalaId": "rosii",
+      "PlantaSecundaraId": "ierburi"
+    },
+    {
+      "Id": 2,
+      "Nume": "Zona 2 – Nord-Est",
+      "Lungime": 10.0,
+      "Latime": 4.0,
+      "PlantaPrincipalaId": "ardei",
+      "PlantaSecundaraId": "vinete"
+    },
+    {
+      "Id": 3,
+      "Nume": "Zona 3 – Sud-Vest",
+      "Lungime": 10.0,
+      "Latime": 4.0,
+      "PlantaPrincipalaId": "salata",
+      "PlantaSecundaraId": "spanac"
+    },
+    {
+      "Id": 4,
+      "Nume": "Zona 4 – Sud-Est",
+      "Lungime": 10.0,
+      "Latime": 4.0,
+      "PlantaPrincipalaId": "castraveti",
+      "PlantaSecundaraId": ""
+    }
+  ]
+}
